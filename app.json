@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "Aparca Gratis",
+    "slug": "mobile",
+    "sdkVersion": "51.0.0",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.moncef.aparcagratis"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.moncef.aparcagratis"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "You need to grant permission to access your camera"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow this app to access your photos",
+          "savePhotosPermission": "Allow this app to save photos",
+          "isAccessMediaLocationEnabled": true
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow this app to use your location."
+        }
+      ],
+      "expo-font",
+      "expo-asset"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e44f5f48-d12e-4437-bfd8-af1b218bd091"
+      }
+    }
+  }
+}
